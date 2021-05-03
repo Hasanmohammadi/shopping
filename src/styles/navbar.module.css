@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  height: 5em;
+  background-color: rgb(10 10 97);
+  border-bottom: red solid 4px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 4em;
+  height: 4em;
+  margin-top: 5px;
+  border-radius: 16px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  margin: 1.3em 0em 0 0;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 4em;
+  font-size: 20px;
+  padding-bottom: 5px;
+  color: white;
+  border-bottom: 2px solid rgb(10 10 97);
+  transition: 0.4s;
+}
+
+.link:hover {
+  border-bottom: 2px solid red;
+}
+
+.userDiv {
+  display: flex;
+  width: 12em;
+  justify-content: space-evenly;
+  margin-top: 22px;
+}
+
+.userLink {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
