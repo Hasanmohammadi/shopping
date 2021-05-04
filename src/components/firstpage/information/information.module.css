@@ -1,0 +1,55 @@
+.container {
+  height: 29vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 0 0 0;
+  background: #020219;
+}
+
+.text {
+  font-size: 17px;
+  width: 45%;
+  font-weight: 700;
+  color: white;
+}
+
+.btn {
+  width: 7em;
+  height: 2.3em;
+  cursor: pointer;
+  font-size: 22px;
+  border: red solid 2px;
+  font-weight: 700;
+  border-radius: 2em;
+  margin: 2em 4em 0 0;
+  color: red;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background: #a6a6c4;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    height: 50.4vh;
+    display: block;
+  }
+
+  .text {
+    font-size: 1em;
+    width: 100%;
+    font-weight: 400;
+    text-align: justify;
+    padding: 0 20px;
+  }
+
+  .btn {
+    width: 7em;
+    height: 2em;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 3em 0 0 5em;
+
+  }
+}

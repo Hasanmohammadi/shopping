@@ -47,3 +47,33 @@
   font-size: 20px;
   color: white;
 }
+
+.menuBtnDiv {
+  display: none;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    justify-content: space-between;
+    padding: 0 1em;
+  }
+  .userDiv {
+    display: none;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .menuBtnDiv {
+    display: block;
+  }
+}
+
+.menuBtn {
+  color: white;
+  font-size: 3em;
+}
+

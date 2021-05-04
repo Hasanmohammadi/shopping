@@ -1,6 +1,6 @@
 import style from "../../../styles/navbar.module.css";
 import Link from "next/link";
-import { UserAddOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import { UserAddOutlined, ShoppingCartOutlined , MenuOutlined} from "@ant-design/icons";
 
 const Navbar = () => {
   return (
@@ -40,6 +40,9 @@ const Navbar = () => {
           </a>
         </Link>
       </div>
+        <div className={style.menuBtnDiv}>
+        <MenuOutlined className={style.menuBtn}/>
+        </div>
     </div>
   );
 };

@@ -1,0 +1,22 @@
+.carousel {
+  
+    height: 61vh;
+    background: aqua;
+}
+
+.post{
+    width: 100%;
+    height: 61vh;
+    background-color: rgb(223, 100, 100);
+}
+
+@media (max-width: 1000px) {
+    .post{
+        height: 41vh;
+    }
+
+
+    .carousel {
+        height: 41vh;
+    }
+}
