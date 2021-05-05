@@ -1,5 +1,5 @@
+import Link from "next/link";
 import style from "./information.module.css"
-
 const Information = () => {
   return (
     <div className={style.container}>
@@ -10,7 +10,7 @@ const Information = () => {
         become the largest online store in the world along with reputable stores
         Be.{" "}
       </p>
-      <button  className={style.btn}>Shop Now</button>
+      <Link href="/products"><a><button className={style.btn}>Shop Now</button></a></Link>
     </div>
   );
 };

@@ -1,29 +1,35 @@
+import "antd/dist/antd.css";
+import { Carousel } from "antd";
+import style from "../../../styles/firstPage.module.css";
+import { useSelector } from "react-redux";
+import { useState, useEffect } from "react";
 
-import 'antd/dist/antd.css';
-import { Carousel } from 'antd';
-import style from "../../../styles/firstPage.module.css"
+const CarouselComponnet = () => {
+  const [error, setError] = useState(true);
+  const products = useSelector((state) => state.products);
 
+  useEffect(() => {
+    if (products.length !== 0) {
+      setError(false);
+    }
+  }, [products]);
 
-const CarouselComponnet  = () => {
-    return (
-        <Carousel autoplay className={style.carousel}>
-          <div>
-            <h3 className={style.post}>1</h3>
-          </div>
-          <div>
-            <h3 className={style.post}>2</h3>
-          </div>
-          <div>
-            <h3 className={style.post}>3</h3>
-          </div>
-          <div>
-            <h3 className={style.post}>4</h3>
-          </div>
-          <div>
-            <h3 className={style.post}>5</h3>
-          </div>
-        </Carousel>
-      );
-}
- 
-export default CarouselComponnet ;
+  return error ? null : (
+    <Carousel autoplay className={style.carousel}>
+      <div>
+        <img src={products[15].image} alt="" className={style.post} />
+      </div>
+      <div>
+        <img src={products[3].image} alt="" className={style.post} />
+      </div>
+      <div>
+        <img src={products[11].image} alt="" className={style.post} />
+      </div>
+      <div>
+        <img src={products[6].image} alt="" className={style.post} />
+      </div>
+    </Carousel>
+  );
+};
+
+export default CarouselComponnet;
