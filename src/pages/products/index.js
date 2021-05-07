@@ -6,6 +6,7 @@ import { PRODUCTS_URL } from "~src/url";
 import "antd/dist/antd.css";
 import style from "./productsPage.module.css";
 import { useSelector } from "react-redux";
+import Link from "next/link";
 
 const ProductsPage = ({products}) => {
   // const products = useSelector((state) => state.products);
@@ -23,11 +24,15 @@ const ProductsPage = ({products}) => {
           <Row gutter={[20, 17]} justify={"end"} className={style.gridContainer}>
             {products.map(({ image, name, price, id }) => {
               return (
-                <Col xs={22} sm={11} lg={7} key={id} className={style.product}>
+                <Link href={`/product/${id}`} key={id}>
+                <Col xs={22} sm={11} lg={7}  className={style.product}>
+                  <a>
                   <img src={image} alt={name} className={style.image} />
                   <span className={style.name}>{`${name}`}</span>
                   <span className={style.price}>{`$${price}`}</span>
+                    </a>
                 </Col>
+                    </Link>
               );
             })}
           </Row>

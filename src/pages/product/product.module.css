@@ -1,0 +1,37 @@
+.container{
+    width: 100%;
+    height: 88.5vh;
+    background: #020219;
+    display:flex;
+}
+
+.title{
+    color: yellow;
+    font-family: cursive;
+    text-transform: capitalize;
+}
+
+.descriptions{
+    color: white;
+}
+
+.text{
+    text-align: justify;
+    color: yellow;
+}
+
+.spans {
+    color: white;
+}
+
+.information{
+    width: 50%;
+    height: 88.5vh;
+    padding-right: 2em;
+}
+
+.picturesDiv{
+    width: 50%;
+    height: 88.5vh;
+  
+}
